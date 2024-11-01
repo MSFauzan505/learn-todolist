@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>ToDoList</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <!-- card header -->
+        <div class="card-header">
+          <div>
+            <h1>Todo<span>List</span></h1>
+            <h5>MSFauzan</h5>
+          </div>
+          <button class="btn-darkmode">
+            <img src="images/night-mode.png" alt="" />
+          </button>
+        </div>
+        <hr />
+        <!-- card body -->
+        <form class="card-body">
+          <input type="text" id="input-task" placeholder="masukkan task" />
+          <select id="input-category">
+            <option value="" selected>Pilih Kategori</option>
+            <option value="Study">Study</option>
+            <option value="Health">Health</option>
+            <option value="Work">Work</option>
+            <option value="more">....</option>
+          </select>
+          <input type="date" id="input-date" />
+        </form>
+
+        <!-- card button -->
+        <div class="card-btn">
+          <div>
+            <button class="btn-submit">Submit</button>
+            <button class="btn-clear">Clear All</button>
+          </div>
+        </div>
+        <hr />
+
+        <!-- card list -->
+        <div class="card-list">
+          <ul class="list">
+            <div class="message">
+                <h1>Masukkan Task Dahulu</h1>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

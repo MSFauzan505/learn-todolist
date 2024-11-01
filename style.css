@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+}
+
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #ff9800;
+  --secondary-color-hover: #f57c00;
+  --bg-color: #f4f7fa;
+  --accent-color: #ff5252;
+  --accent-color-hover: #f44332;
+  --text-color: #333333;
+  --completed-task-color: #bdbdbd;
+  --uncompleted-task-color: lightblue;
+  --blue-color: rgb(144, 144, 248);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 700px;
+  min-height: 90vh;
+  margin: 10px auto;
+  background: var(--primary-color);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.card {
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+  padding: 3px 10px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header div {
+  display: flex;
+  align-items: start;
+  gap: 0.1rem;
+}
+
+.card-header div h5 {
+  font-size: 10px;
+  background: var(--accent-color);
+  color: var(--primary-color);
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+.card-body {
+  padding: 1rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.card-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .5rem;
+}
+
+.card-list {
+  width: 100%;
+  margin: auto;
+}
+
+.list .list-item {
+  margin: 0.5rem 0;
+  background: var(--uncompleted-task-color);
+  font-weight: 400;
+  border-radius: 5px;
+  padding: 0.4rem 0.6rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.list-item .task-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.list-item .task-left p{
+  cursor: pointer;
+}
+.list-item .task-left p:hover{
+  color: var(--accent-color);
+}
+
+.list-item .task-right{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.list-item div .badge{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3px;
+}
+
+.list-item div .badge p{
+    font-size: 10px;
+}
+
+.list-item div .badge .date{
+    background: var(--primary-color);
+    padding: 0 .3rem;
+    border-radius: 5px;
+}
+
+.list-item div .badge .category{
+    background: var(--blue-color);
+    color: var(--primary-color);
+    padding: 0 .3rem;
+    border-radius: 5px;
+}
+
+.list .list-item div p {
+  word-break: break-word;
+  margin: 0 0.1rem;
+}
+
+.message{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  width: 100%;
+  min-height: 50vh;
+  margin-top: .5rem;
+  border-radius: 10px;
+  background: var(--blue-color);
+}
+
+/* horizon line */
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 0.1rem 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.btn-submit {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  margin: 0.2rem 0;
+}
+
+.btn-submit:hover{
+  background: var(--secondary-color-hover);
+}
+
+
+.btn-clear {
+  background: var(--accent-color);
+  color: var(--primary-color);
+}
+
+.btn-clear:hover{
+  background: var(--accent-color-hover);
+}
+
+.btn-darkmode {
+  background: var(--primary-color);
+  display: flex;
+  padding: 0.3rem 1rem;
+}
+
+.btn-delete {
+  height: 2rem;
+  background: var(--accent-color);
+  color: var(--primary-color);
+}
+.btn-delete:hover{
+  background: var(--accent-color-hover);
+}
+
+.btn-edit {
+  height: 2rem;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+.btn-edit:hover{
+  background: var(--secondary-color-hover);
+}
+
+input {
+  width: 100%;
+  border-radius: 5px;
+  padding: 0.1rem 0.3rem;
+  border: none;
+  padding: 0.3rem 1rem;
+  background: var(--bg-color);
+}
+
+.card-body select {
+  width: 100%;
+  border-radius: 5px;
+  padding: 0.3rem 1rem;
+  border: none;
+  background: var(--bg-color);
+}
+
+.card-btn div select {
+  border-radius: 5px;
+  padding: 0.1rem 0.3rem;
+  border: none;
+  padding: 0.3rem 1rem;
+  background: var(--bg-color);
+}
+
+span {
+  color: var(--accent-color);
+}
+
